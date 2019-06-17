@@ -7,13 +7,14 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
-    {
-      path: "/",
-      name: "layout",
-      component: Layout,  
-      children: [
-        { path: "", name: "ddos", component: Ddos }
-      ]
-    }
+    { path: "/", name: "ddos", component: Ddos },
+    // {
+    //   path: "/",
+    //   name: "layout",
+    //   component: Layout,
+    //   children: [
+    //     { path: "", name: "ddos", component: Ddos }
+    //   ]
+    // }
   ]
 });

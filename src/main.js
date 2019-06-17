@@ -3,12 +3,13 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./registerServiceWorker";
-import Echarts from "echarts";
 import Antd from 'ant-design-vue'
+import "echarts/extension/bmap/bmap";
 import 'ant-design-vue/dist/antd.css'
+import echarts from 'echarts'
 
+Vue.prototype.$echarts = echarts;
 Vue.config.productionTip = true;
-Vue.component("v-chart", Echarts);
 Vue.use(Antd);
 
 
